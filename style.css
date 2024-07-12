@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    color: antiquewhite;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.game{
+    gap: 30px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/Rock\ Game\ BG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.display-board{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.display-board img{
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid #2DADF0;
+}
+
+.display-card{
+    gap: 10px;
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid #E1349B;
+    background-color: #060b473e;
+    backdrop-filter: blur(2px);
+}
+
+.display-card p{
+    color: #E1349B;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.user-choice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.user-choice button{
+    font-size: 70px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #b21172;
+    transition: 0.2s ease-in-out;
+}
+
+.user-choice button:hover{
+    border: 2px solid #b21172;
+    background-color: black;
+}
+
+.user-choice button:active{
+    transform: scale(0.85);
+}
+
+.message-box{
+    width: 22rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1.5px solid #E1349B;
+}
